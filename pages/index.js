@@ -7,7 +7,7 @@ import _Head from "../components/Head";
 
 const Home = ({ posts }) => (
   <div className="container">
-    <_Head />
+    <_Head title="Home" />
     <Header />
 
     {posts.map(post => (

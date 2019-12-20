@@ -7,7 +7,7 @@ import _Head from "../components/Head";
 
 const BlogPost = ({ post }) => (
   <div className="container">
-    <_Head />
+    <_Head title={post.title} />
     <Header />
     <Blog post={post} />
 
