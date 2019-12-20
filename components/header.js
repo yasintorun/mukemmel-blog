@@ -5,20 +5,20 @@ const Header = () => (
     <div className="hero">
         <h1 className="hero-title">Selman Kahya</h1>
         <div className="hero-social-links">
-            <Link href="https://medium.com/@selmankahya">
                 <a className="social-link">Medium</a>
             </Link>
-            <Link href="https://www.twitter.com/selmankahyax">
                 <a className="social-link">Twitter</a>
             </Link>
-            <Link href="https://www.linkedin.com/in/selmankahya">
                 <a className="social-link">LinkedIn</a>
             </Link>
-            <Link href="https://www.instagram.com/selmankahyax/?hl=en">
                 <a className="social-link">Instagram</a>
             </Link>
         </div>
         <style jsx>{`
+      <Link href="medium.com/@selmankahya">
+      <Link href="www.twitter.com/selmankahyax">
+      <Link href="www.linkedin.com/in/selmankahya">
+      <Link href="www.instagram.com/selmankahyax/?hl=en">
       .container {
         max-width: 650px;
         width: 100%;
