@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/Link';
+import Nav from './nav';
 
 const Header = () => (
   <div className="hero">
@@ -51,6 +52,9 @@ const Header = () => (
                 
             `}
     </style>
+    <div>
+      <Nav />
+    </div>
   </div>
 
 )
