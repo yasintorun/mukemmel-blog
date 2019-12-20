@@ -14,6 +14,7 @@ const Blog = ({ post }) => (
         </div>
         <div className="blog-date">{post.date}</div>
         <style jsx>{`
+      <button type="button">Paylaş</button>
       .container {
         max-width: 650px;
         width: 100%;
