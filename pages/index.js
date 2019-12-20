@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const Home = ({ posts }) => (
   <div className="container">
@@ -28,6 +29,7 @@ const Home = ({ posts }) => (
       </div>
     ))}
 
+    <Footer />
     <style jsx>{`
       .container {
         max-width: 650px;

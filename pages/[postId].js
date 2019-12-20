@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import Header from "../components/header";
+import Footer from "../components/footer";
 
 const BlogPost = ({ post }) => (
   <div className="container">
@@ -25,6 +26,8 @@ const BlogPost = ({ post }) => (
       </div>
       <div className="blog-date">{post.date}</div>
     </div>
+
+    <Footer />
     <style jsx>{`
       .container {
         max-width: 650px;
