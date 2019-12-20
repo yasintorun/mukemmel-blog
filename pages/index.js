@@ -11,7 +11,7 @@ const Home = ({ posts }) => (
     <Header />
 
     {posts.map(post => (
-      <Blog post={post} />
+      <Blog key={post.id} post={post} />
     ))}
 
     <Footer />
