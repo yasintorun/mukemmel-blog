@@ -1,8 +1,8 @@
 import Head from 'next/Head';
 
-const _Head = () => (
+const _Head = ({ title }) => (
     <Head>
-        <title>Home</title>
+        <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
     </Head>
 )
