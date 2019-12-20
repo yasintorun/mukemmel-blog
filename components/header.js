@@ -2,23 +2,23 @@ import React from 'react';
 import Link from 'next/Link';
 
 const Header = () => (
-    <div className="hero">
-        <h1 className="hero-title">Selman Kahya</h1>
-        <div className="hero-social-links">
-                <a className="social-link">Medium</a>
-            </Link>
-                <a className="social-link">Twitter</a>
-            </Link>
-                <a className="social-link">LinkedIn</a>
-            </Link>
-                <a className="social-link">Instagram</a>
-            </Link>
-        </div>
-        <style jsx>{`
+  <div className="hero">
+    <h1 className="hero-title">Selman Kahya</h1>
+    <div className="hero-social-links">
       <Link href="medium.com/@selmankahya">
+        <a className="social-link">Medium</a>
+      </Link>
       <Link href="www.twitter.com/selmankahyax">
+        <a className="social-link">Twitter</a>
+      </Link>
       <Link href="www.linkedin.com/in/selmankahya">
+        <a className="social-link">LinkedIn</a>
+      </Link>
       <Link href="www.instagram.com/selmankahyax/?hl=en">
+        <a className="social-link">Instagram</a>
+      </Link>
+    </div>
+    <style jsx>{`
       .container {
         max-width: 650px;
         width: 100%;
@@ -50,8 +50,8 @@ const Header = () => (
       }
                 
             `}
-        </style>
-    </div>
+    </style>
+  </div>
 
 )
 export default Header;
