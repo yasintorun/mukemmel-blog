@@ -1,17 +1,13 @@
 import React from "react";
 import fetch from "isomorphic-unfetch";
-import Head from "next/head";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Blog from "../components/blog";
+import _Head from "../components/Head";
 
 const BlogPost = ({ post }) => (
   <div className="container">
-    <Head>
-      <title>Home</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-
+    <_Head />
     <Header />
     <Blog post={post} />
 
