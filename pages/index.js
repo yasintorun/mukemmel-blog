@@ -1,10 +1,9 @@
 import React from "react";
 import fetch from "isomorphic-unfetch";
 import Head from "next/head";
-import Link from "next/link";
-import ReactMarkdown from "react-markdown";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Blog from "../components/blog";
 
 const Home = ({ posts }) => (
   <div className="container">
@@ -16,17 +15,7 @@ const Home = ({ posts }) => (
     <Header />
 
     {posts.map(post => (
-      <div className="blog">
-        <h2 className="blog-title">
-          <Link href={post.slug}>
-            <a className="blog-title-link">{post.title}</a>
-          </Link>
-        </h2>
-        <div className="blog-text">
-          <ReactMarkdown source={post.details} />
-        </div>
-        <div className="blog-date">{post.date}</div>
-      </div>
+      <Blog post={post} />
     ))}
 
     <Footer />
