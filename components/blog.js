@@ -30,6 +30,10 @@ const Blog = ({ post }) => (
       .card-header{
         text-align: center;
       }
+      .card-img:hover {
+        box-shadow: 0 18px 32px -18px black;
+        cursor: pointer;
+      }
     `}</style>
   </div >
 )
