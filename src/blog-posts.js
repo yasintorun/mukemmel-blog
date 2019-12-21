@@ -13,7 +13,8 @@ export const getPosts = () => {
       title: "Örnek yazı",
       slug: "ornek-yazi",
       details: require("./posts/ornek-yazi.md").default,
-      date: "3 Aralık 2019"
+      date: "3 Aralık 2019",
+      img: "/image1.jpg"
     },
     {
       id: 3,
