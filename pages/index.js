@@ -18,13 +18,14 @@ const Home = ({ posts }) => (
       </div>
       <div className="col-md-3">
         <div className="card">
-          <h1>Sidebar title</h1>
-          <p>Deneme yazısı
-            burası bir Sidebar
-            hakkımda kısmı
-            populer post kısmı
-            buraya eklenecek.
-          </p>
+          <img className="card-img-top" src="/myPhoto.jpg" />
+          <div className="card-body">
+            <h4 className="card-title">Yasin Torun</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="/hakkimda" className="btn btn-primary">Profili görüntüle</a>
+          </div>
         </div>
       </div>
     </div>
