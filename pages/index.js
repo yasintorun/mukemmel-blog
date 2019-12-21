@@ -27,10 +27,28 @@ const Home = ({ posts }) => (
             <a href="/hakkimda" className="btn btn-primary">Profili görüntüle</a>
           </div>
         </div>
+        <hr />
+        <div className="card">
+          <div className="card-body">
+            <h4 className="card-title text-center">En çok okunan yazılar</h4>
+            {/* Şimdilik postlar bu şekilde çekiyoruz ama ilerde veritabanı kuruldugunda
+            en çok okunan yada tıklanan postlara göre düzenlenecektir. */}
+            <h6><a href={posts[0].slug}>{posts[0].title}</a></h6>
+            <h6><a href={posts[1].slug}>{posts[1].title}</a></h6>
+            <h6><a href={posts[2].slug}>{posts[2].title}</a></h6>
+          </div>
+        </div>
       </div>
     </div>
     <Footer />
-
+    <style jsx>{`
+            h6{
+              padding: 10px;
+            }
+            a{
+              text-decoration: none;
+            }
+          `}</style>
   </div>
 );
 
