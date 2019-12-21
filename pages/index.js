@@ -9,43 +9,27 @@ const Home = ({ posts }) => (
   <div className="container">
     <_Head title="Home" />
     <Header />
-
-    {posts.map(post => (
-      <Blog key={post.id} post={post} />
-    ))}
-
+    <div className="row">
+      {/*AnaSayfa blog + sidebar şeklinde olacak(9+3)*/}
+      <div className="col-md-9">
+        {posts.map(post => (
+          <Blog key={post.id} post={post} />
+        ))}
+      </div>
+      <div className="col-md-3">
+        <div className="card">
+          <h1>Sidebar title</h1>
+          <p>Deneme yazısı
+            burası bir Sidebar
+            hakkımda kısmı
+            populer post kısmı
+            buraya eklenecek.
+          </p>
+        </div>
+      </div>
+    </div>
     <Footer />
-    <style jsx>{`
-      .container {
-        max-width: 650px;
-        width: 100%;
-        margin: 0 auto;
-      }
 
-      .hero {
-        text-align: center;
-        margin: 96px 0;
-      }
-
-      .social-link {
-        margin-right: 8px;
-      }
-
-      .hero-title {
-        font-size: 48px;
-      }
-
-      .blog-date {
-        text-align: right;
-        color: #cccccc;
-        margin: 12px 0 48px 0;
-      }
-
-      a {
-        color: #35459e;
-        text-decoration: none;
-      }
-    `}</style>
   </div>
 );
 
