@@ -5,7 +5,8 @@ export const getPosts = () => {
       title: "1500TL ödül! Sen de yarışmaya katıl!",
       slug: "yarisma",
       details: require("./posts/yarisma.md").default,
-      date: "5 Aralık 2019"
+      date: "5 Aralık 2019",
+      img: "https://c4.wallpaperflare.com/wallpaper/246/739/689/digital-digital-art-artwork-illustration-abstract-hd-wallpaper-thumb.jpg"
     },
     {
       id: 2,

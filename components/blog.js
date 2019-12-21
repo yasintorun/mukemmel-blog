@@ -3,12 +3,14 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
 const Blog = ({ post }) => (
-  <div className="card mb-4">
+
+  < div className="card mb-4" >
     <h2 className="card-header">
       <Link href={post.slug}>
         <a className="card-title">{post.title}</a>
       </Link>
     </h2>
+    <img className="card-img" src={post.img} />
     <div className="card-body">
       <p className="card-text"><ReactMarkdown source={post.details} /></p>
     </div>
@@ -29,7 +31,7 @@ const Blog = ({ post }) => (
         text-align: center;
       }
     `}</style>
-  </div>
+  </div >
 )
 
 export default Blog;
