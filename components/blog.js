@@ -6,7 +6,7 @@ const Blog = ({ post }) => (
   <div className="card mb-4">
     <h2 className="card-header">
       <Link href={post.slug}>
-        <a className="blog-title-link">{post.title}</a>
+        <a className="card-title">{post.title}</a>
       </Link>
     </h2>
     <div className="card-body">
