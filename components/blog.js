@@ -12,11 +12,17 @@ const Blog = ({ post }) => (
     <div className="card-body">
       <p className="card-text"><ReactMarkdown source={post.details} /></p>
     </div>
-    <div className="date card-meta text-secondary">{post.date}</div>
+    <div className=" date card-meta text-secondary">
+      <button className="btn btn-primary">
+        <span className="material-icons">&#xe80d;</span>
+      </button>
+      <p>{post.date}</p>
+
+    </div>
     <style jsx>{`
     .date{
       text-align: right;
-      margin: 12px 10px 24px 0;
+      margin: 12px 10px 4px 0;
     }
     `}</style>
   </div>
