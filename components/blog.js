@@ -13,17 +13,21 @@ const Blog = ({ post }) => (
       <p className="card-text"><ReactMarkdown source={post.details} /></p>
     </div>
     <div className=" date card-meta text-secondary">
-      <button className="btn btn-primary">
-        <span className="material-icons">&#xe80d;</span>
-      </button>
+      <a href="#"><span className="fa fa-share-alt" /></a>
       <p>{post.date}</p>
-
     </div>
+    <hr />
     <style jsx>{`
-    .date{
-      text-align: right;
-      margin: 12px 10px 4px 0;
-    }
+      .date{
+        text-align: right;
+        margin: 12px 10px 4px 0;
+      }
+      a{
+        text-decoration: none;
+      }
+      .card-header{
+        text-align: center;
+      }
     `}</style>
   </div>
 )
