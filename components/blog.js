@@ -3,49 +3,23 @@ import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 
 const Blog = ({ post }) => (
-    <div className="blog">
-        <h2 className="blog-title">
-            <Link href={post.slug}>
-                <a className="blog-title-link">{post.title}</a>
-            </Link>
-        </h2>
-        <div className="blog-text">
-            <ReactMarkdown source={post.details} />
-        </div>
-        <div className="blog-date">{post.date}</div>
-        <style jsx>{`
-      <button type="button">Paylaş</button>
-      .container {
-        max-width: 650px;
-        width: 100%;
-        margin: 0 auto;
-      }
-
-      .hero {
-        text-align: center;
-        margin: 96px 0;
-      }
-
-      .social-link {
-        margin-right: 8px;
-      }
-
-      .hero-title {
-        font-size: 48px;
-      }
-
-      .blog-date {
-        text-align: right;
-        color: #cccccc;
-        margin: 12px 0 48px 0;
-      }
-
-      a {
-        color: #35459e;
-        text-decoration: none;
-      }
-    `}</style>
+  <div className="card mb-4">
+    <h2 className="card-header">
+      <Link href={post.slug}>
+        <a className="blog-title-link">{post.title}</a>
+      </Link>
+    </h2>
+    <div className="card-body">
+      <p className="card-text"><ReactMarkdown source={post.details} /></p>
     </div>
+    <div className="date card-meta text-secondary">{post.date}</div>
+    <style jsx>{`
+    .date{
+      text-align: right;
+      margin: 12px 10px 24px 0;
+    }
+    `}</style>
+  </div>
 )
 
 export default Blog;
