@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 
 const links = [
   { href: '/hakkimda', label: 'Hakkımda' },
@@ -10,47 +9,44 @@ const links = [
 })
 
 const Nav = () => (
-  <nav>
+  <div>
     <ul>
-      <li>
-        <Link href="/">
-          <a>Home</a>
-        </Link>
-      </li>
       {links.map(({ key, href, label }) => (
-        <li key={key}>
+        <li key={key} >
           <a href={href}>{label}</a>
         </li>
       ))}
     </ul>
-
     <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
+        div{
+          padding: 8px;
+          margin: 24px 0;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+      `}</style>
+  </div>
 )
 
 export default Nav
