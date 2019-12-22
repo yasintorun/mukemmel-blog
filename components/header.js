@@ -3,18 +3,18 @@ import Nav from './nav';
 import Link from 'next/link'
 const Header = () => (
   <div className="hero">
-    <h1 className="hero-title"><a href="/">Selman Kahya</a></h1>
+    <h1 className="hero-title"><a href="/">Yasin Torun</a></h1>
     <div className="hero-social-links">
-      <Link href="https://medium.com/@selmankahya">
+      <Link href="medium.com">
         <a className="social-link"><span className="	fa fa-medium" /></a>
       </Link>
-      <Link href="https://www.twitter.com/selmankahyax">
+      <Link href="www.twitter.com/">
         <a className="social-link"><span className="	fa fa-twitter" /></a>
       </Link>
-      <Link href="https://www.linkedin.com/in/selmankahya">
+      <Link href="www.linkedin.com/">
         <a className="social-link"><span className="	fa fa-linkedin" /></a>
       </Link>
-      <Link href="https://www.instagram.com/selmankahyax/?hl=en">
+      <Link href="www.instagram.com/">
         <a className="social-link"><span className="	fa fa-instagram" /></a>
       </Link>
     </div>
