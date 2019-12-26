@@ -2,7 +2,6 @@ import React from 'react'
 
 const links = [
   { href: '/hakkimda', label: 'Hakkımda' },
-  { href: '/iletisim', label: 'İletişim' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link
@@ -42,7 +41,7 @@ const Nav = () => (
           text-decoration: none;
         }
         
-        li a:hover:not(.active) {
+        li a:hover {
           background-color: #111;
         }
       `}</style>
